@@ -13,7 +13,7 @@ nav{
     height: 60px;
 }
 
-h1 {
+.titulonav {
     font-family: 'EB Garamond', serif;
     color: aliceblue;
     font-size: 35px;
