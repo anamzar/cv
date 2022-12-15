@@ -250,6 +250,10 @@ th{
     text-align: center;
     padding: 50px
 }
+img{
+    width: 200px;
+    height: 200px;
+}
 
 footer {
     background: #748067;
