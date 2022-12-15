@@ -1,16 +1,12 @@
 *{
-    padding:0%;
     margin: 0%;
-    text-decoration: none;
-    list-style: none;
-
-
 }
 
 nav{
     background: #56667A;
     width: 100%;
     height: 60px;
+    
 }
 .titulo {
     font-family: 'EB Garamond', serif;
@@ -22,6 +18,7 @@ nav{
 nav ul{
     float: right;
     margin-right: 20px;
+    
 }
 nav ul li{
     display: inline-block;
@@ -33,6 +30,7 @@ nav ul li a{
     font-size: 18px;
     padding: 7px 13px;
     margin-bottom: 20px;
+    text-decoration: none;
 }
 nav ul li a:hover{
     text-decoration-line: underline;
@@ -40,7 +38,7 @@ nav ul li a:hover{
 }
 
 .header {
-    background: #acbd9a;
+    background: #748067;
     width: 100%;
     height: 250px;
     margin-top: 20px;
@@ -85,9 +83,9 @@ nav ul li a:hover{
 
 }
 .izquierda {
-    background: #acbd9a;
+    background: #748067;
     width: 30%;
-    height: 1500px;
+    height: 1550px;
     position:absolute;
     top: 220px;
     margin:10%;
@@ -100,30 +98,79 @@ nav ul li a:hover{
     font-family: 'EB Garamond', serif;
     text-align: center;
     font-size:xx-large;
-    /*border-bottom: 2px white solid;*/
     margin-top: 1px;
     padding-bottom: 10px;
 }
 
-.tituloinfo{
-    color:aliceblue;
-    font-family: 'EB Garamond', serif;
-    font-size: large;
-    margin-left: 20px;
-    display:inline;
-    margin-right:20px;
- 
-
-
-}
 .dato{
     color:aliceblue;
     font-family: 'EB Garamond', serif;
     font-size: large;
-    display:inline;
     line-height: 40px;
+    list-style: none;
+}
+.cumpleaños::before{
+    content: '';
+    display:inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url(../img/pastel.png);
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    background-position: center center;
+    vertical-align: middle;
 
-   
+}
+.direccion::before{
+    content: '';
+    display:inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url(../img/direccion.png);
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    background-position: center center;
+    vertical-align: middle;
+
+}
+.nacionalidad::before{
+    content: '';
+    display:inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url(../img/bandera.png);
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    background-position: center center;
+    vertical-align: middle;
+
+}
+.email::before{
+    content: '';
+    display:inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url(../img/email.png);
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    background-position: center center;
+    vertical-align: middle;
+}
+.tlf::before{
+    content: '';
+    display:inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url(../img/telefono.png);
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    background-position: center center;
+    vertical-align: middle;
+
+}
+.dato a:hover, a:link, a:visited{
+    color:aliceblue;
+    text-decoration: none;
 }
 .derecha{
     width: 60%;
@@ -134,12 +181,36 @@ nav ul li a:hover{
     padding: 20px;
     left: 27%;
 }
+.naveg{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    text-align: center;
+    width: 100%;
+}
+.naveg a{
+    font-family: 'EB Garamond', serif;
+    font-size:large;
+    width: 100%;
+    margin-bottom: 10px;
+    color: #748067;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+.naveg :hover{
+    text-decoration: none;
+    color: aliceblue;
+    background: #748067;
+    font-size: 130%;
+    cursor: pointer;
+    
+}
 .tituloseccionder{
     color:#748067;
     font-family: 'EB Garamond', serif;
     text-align: center;
     font-size:xx-large;
-    /*border-bottom: 2px white solid;*/
     margin-top: 1px;
     padding-bottom: 10px;
     padding: 40px;
@@ -181,13 +252,19 @@ th{
 }
 
 footer {
-    background: #acbd9a;
+    background: #748067;
     width: 100%;
     height: 125px;
-    margin-top: 1590px;
+    margin-top: 1650px;
     
 }
-
+.titulofoo{
+    font-family: 'EB Garamond', serif;
+    color:aliceblue;
+    font-size: 35px;
+    padding: 30px;
+    position: absolute;
+}
 .redessociales {
     text-align: center;
     padding: 20px;
@@ -196,3 +273,4 @@ footer {
     width: 40px;
     height: 40px;
 }
+
