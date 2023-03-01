@@ -4,39 +4,131 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=EB+Garamond:ital@1&family=Great+Vibes&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/contacto.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&display=swap" rel="stylesheet">
-
+    <title>Contacto</title>
+</head>
 <body>
-    <nav>
-        <h1 class="titulonav">Currículum Vitae</h1>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="curriculumvitae.html">Currículum Vitae</a></li>
-            <li><a href="sobremi.html">Sobre Mí</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-           </ul>
-    </nav>
-    <div>
-        <p class="tituloseccion"><b>Contacta conmigo</b></p>
-    </div>
-    <div>
-        <p class="datos">Si tienes alguna duda o estás interesado en lo que estás viendo<br/> puedes contactar conmigo aquí</p>
-    </div>
-    <div class="imag">
-        <img src="img/flecha.gif" alt="Flecha">
-    </div>
-    <div class="datos">
-        <a href=mailto:amz9728@gmail.com>amz9728@gmail.com</a>
-        <p>o</p>
-        <a href="tel:+34608088890">608088890</a>
-    </div>
-    
+    <header>
+        <article class="logo">
+            <img src="/img/logo.png" alt="Banus 23">
+        </article>
+        <div class="normal"><button><a href="index.html">Inicio</a></button></div>
+        <div class="normal"><button><a href="media.html">Media</a></button></div>
+        <div class="normal" class="nav-item dropdown">
+            <a class="nav-link dropdown" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <button class="boton1">Info</button>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+              <a class="dropdown-item" href="carta.html">Nuestra carta</a>
+              <a class="dropdown-item" href="ofertas.html">Ofertas</a>
+              <a class="dropdown-item" href="acuerdos.html">Acuerdos Comerciales</a>
+            </div>
+          </div>
+        <div class="normal"><button class="boton"><a href="ubicacion.html">Donde nos encontramos</a></button></div>
+        <div class="normal"><button><a href="contacto.html">Contacto</a></button></div>
+        <!--Menú desplegable para movil-->
+        <div class="menudesp"class="nav-item dropdown">
+            <a class="nav-link dropdown" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <button class="desplegable">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                <a class="dropdown-item" href="index.html">Inicio</a>
+                <a class="dropdown-item" href="media.html">Media</a>
+                <a class="dropdown-item" href="carta.html">Nuestra Carta</a>
+                <a class="dropdown-item" href="ofertas.html">Ofertas</a>
+                <a class="dropdown-item" href="acuerdos.html">Acuerdos Comerciales</a>
+                <a class="dropdown-item" href="ubicacion.html">Ubicación</a>
+                <a class="dropdown-item" href="contacto.html">Contacto</a>
+            </div>
+        </div>  
+    </header>
+    <main>
+        <article class="titulo">
+            <p>Contacta con Nosotros</p>
+        </article>
+        <div class="container">
+            <form action="/action_page.php" method="get">
+                <fieldset>
+                    Nombre:
+                    <input type="text" name="nombre" value="">
+                    Apellidos:
+                    <input class="form" type="text" name="apellidos" value="">
+                    </fieldset>
+                    <fieldset>
+                    Localidad:
+                    <input type="text" name="localidad" value="">
+                    Provincia: 
+                    <select name="provincia"> 
+                        <option value="jaen">Jaén</option>
+                        <option value="sevilla">Sevilla</option>
+                        <option value="cordoba">Córdoba</option>
+                        <option value="granada">Granada</option>
+                        <option value="cadiz">Cádiz</option>
+                        <option value="almeria">Almería</option>
+                        <option value="huelva">Huelva</option>
+                        <option value="malaga">Málaga</option>
+                    </select>
+                    Código postal:
+                    <input type="text" name="cp" maxlength="5">
+                    </fieldset>
+                    <fieldset class="genero">
+                    <input type="radio" name="gender" value="mujer"> Mujer
+                    <input type="radio" name="gender" value="hombre"> Hombre
+                </fieldset>    
+                <fieldset>
+                    Correo: 
+                    <input class="form" type="text" name="correo" value="">
+                </fieldset>
+                <fieldset>
+                    Asunto:
+                    <input class="form" type="text" name="asunto" value="">
+                </fieldset>
+                <fieldset>
+                    Mensaje:
+                    <input class="mensaje" type="text" name="mensaje" minlength="20">
+
+                </fieldset>
+                <input class="enviar" type="submit" value="Enviar">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="copyright">
+            <p>Copyright 2009 by Banus 23. Todos los derechos reservados. Derechos de admisión.</p>
+        </div>
+        <div class="containerf">
+            <div class="redes">
+                <div class="icon">
+                    <i class="fa fa-facebook"></i>
+                </div>
+                <a href="https://www.facebook.com/banus23/"><span>Facebook</span></a>
+            </div>
+            <div class="redes">
+                <div class="icon">
+                    <i class="fa fa-instagram"></i>
+                </div>
+                <a href="https://www.instagram.com/banus__23/?hl=es"><span>Instagram</span></a>
+            </div>
+            <div class="redes">
+                <div class="icon">
+                    <i class="fa fa-whatsapp"></i>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=666430516&"><span>WhatsApp</span></a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
